@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Maha Shivratri – A Divine Love Journey</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Great+Vibes&family=Poppins:wght@300;400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #0b0f1a, #000);
+      color: #fff;
+      overflow-x: hidden;
+      cursor: default;
+    }
+
+    /* ===== PREMIUM COSMIC BACKGROUND ===== */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.04) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 105, 180, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 40% 10%, rgba(173, 216, 230, 0.02) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    section {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ===== PREMIUM GLOW EFFECTS ===== */
+    .glow-text {
+      text-shadow: 
+        0 0 10px rgba(255, 215, 0, 0.4),
+        0 0 20px rgba(255, 215, 0, 0.3),
+        0 0 30px rgba(255, 215, 0, 0.2),
+        0 0 40px rgba(255, 215, 0, 0.1);
+      color: #ffd700;
+    }
+
+    .glow-heart {
+      text-shadow: 
+        0 0 10px rgba(255, 105, 180, 0.5),
+        0 0 20px rgba(255, 105, 180, 0.3),
+        0 0 30px rgba(255, 105, 180, 0.15);
+      color: #ff69b4;
+    }
+
+    /* ===== PARTICLE EFFECTS ===== */
+    .particle {
+      position: fixed;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .particle-heart {
+      font-size: 2rem;
+      animation: floatUp 4s ease-out forwards;
+    }
+
+    @keyframes floatUp {
+      0% { opacity: 1; transform: translateY(0) translateX(0) scale(1) rotate(0deg); }
+      100% { opacity: 0; transform: translateY(-100vh) translateX(30px) scale(0.3) rotate(180deg); }
+    }
+
+    .particle-star {
+      font-size: 1rem;
+      animation: twinkleFloat 5s ease-out forwards;
+    }
+
+    @keyframes twinkleFloat {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 0; transform: translateY(-80vh) scale(0); }
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    /* ===== HERO SECTION - WITH SHIVA BACKGROUND ===== */
+    .hero {
+      background: 
+        linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(75,0,130,0.35) 50%, rgba(138,43,226,0.2) 100%),
+        url('https://cdn.magicdecor.in/com/2023/10/27152721/3D-Adiyogi-Shiv-Sculpture-Coimbatore-Wallpaper-for-Wall.jpg') center/cover no-repeat;
+      background-attachment: fixed;
+      text-align: center;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ===== MAHAKAL SECTION - WITH DIVINE BACKGROUND ===== */
+    .mahakal-section {
+      background: 
+        linear-gradient(135deg, rgba(20,10,50,0.96) 0%, rgba(0,0,0,0.98) 100%),
+        url('https://img.freepik.com/free-vector/hindu-cultural-maha-shivratri-wishes-card-with-lord-shiva-silhouette_1017-49765.jpg?semt=ais_user_personalization&w=740&q=80') center/cover no-repeat;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    /* ===== STORY SECTION - WITH MEDITATION BACKGROUND ===== */
+    .story-section {
+      background: 
+        linear-gradient(135deg, rgba(20,10,40,0.95) 0%, rgba(0,0,0,0.98) 100%),
+        url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    /* ===== ABHISHEK SECTION - WITH TEMPLE BACKGROUND ===== */
+    .abhishek-section {
+      background: 
+        linear-gradient(135deg, rgba(20,10,50,0.97) 0%, rgba(0,0,0,0.99) 100%),
+        url('https://t3.ftcdn.net/jpg/17/40/60/18/360_F_1740601883_UIxFCUg90kml3ceLgXcB5hHOrCCTqNyi.jpg') center/cover no-repeat;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    /* ===== GALLERY SECTION - WITH COSMIC BACKGROUND ===== */
+    .gallery-section {
+      background: 
+        linear-gradient(135deg, rgba(75,0,130,0.15) 0%, rgba(0,0,0,0.98) 100%),
+        url('https://t3.ftcdn.net/jpg/12/63/45/92/360_F_1263459227_KloX79EqWLZTNKvxWoobr69lHeVSH0zM.jpg') center/cover no-repeat;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    /* ===== TIMELINE SECTION - WITH MYSTICAL BACKGROUND ===== */
+    .timeline-section {
+      background: 
+        linear-gradient(135deg, rgba(10,5,20,0.95) 0%, rgba(0,0,0,0.98) 100%),
+        url('https://img.freepik.com/premium-photo/maha-shivratri-festival-celebration-hindu-lord-god-shiva-magical-lights-background_59535-8999.jpg') center/cover no-repeat;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    /* ===== DIVINE MESSAGE SECTION - WITH SPIRITUAL BACKGROUND ===== */
+    .divine-message-section {
+      background: 
+        linear-gradient(135deg, rgba(30,5,50,0.96) 0%, rgba(10,5,20,0.99) 100%),
+        url('https://img.freepik.com/premium-photo/maha-shivratri-festival-celebration-hindu-lord-god-shiva-magical-lights-background_59535-8999.jpg') center/cover no-repeat;
+      background-attachment: fixed;
+      position: relative;
+      padding: 80px 20px;
+    }
+
+    /* ===== PROPOSAL SECTION - WITH MOUNTAIN SHIVA BACKGROUND ===== */
+    .proposal-section {
+      background: 
+        linear-gradient(135deg, rgba(30,10,50,0.98) 0%, rgba(0,0,0,0.99) 100%),
+        url('https://t3.ftcdn.net/jpg/12/63/45/92/360_F_1263459227_KloX79EqWLZTNKvxWoobr69lHeVSH0zM.jpg') center/cover no-repeat;
+      background-attachment: fixed;
+      position: relative;
+      padding: 120px 40px;
+    }
+
+    /* ===== FINAL MESSAGE SECTION - WITH ETERNAL BACKGROUND ===== */
+    .final-message-section {
+      background: 
+        linear-gradient(135deg, rgba(30,10,50,0.97) 0%, rgba(0,0,0,0.99) 100%),
+        url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJrqNRDDWCIaBQPVlt50D_u4sGIjZlD_IsNg&s') center/cover no-repeat;
+      background-attachment: fixed;
+      position: relative;
+      padding: 100px 20px;
+    }
+
+    /* ===== ENHANCED STORY CARD LAYOUT ===== */
+    .story {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 2px solid rgba(255,215,0,0.2);
+      box-shadow: 
+        0 30px 80px rgba(255,215,0,0.15),
+        inset 0 0 60px rgba(255,105,180,0.08);
+    }
+
+    /* ===== ENHANCED ABHISHEK CARD LAYOUT ===== */
+    .abhishek {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid rgba(255,215,0,0.2);
+      box-shadow: 
+        0 30px 80px rgba(255,215,0,0.2),
+        inset 0 0 80px rgba(255,105,180,0.08);
+      padding: 80px 40px;
+      border-radius: 35px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* ===== ENHANCED TIMELINE CARD LAYOUT ===== */
+    .romantic-timeline {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid rgba(255,215,0,0.2);
+      box-shadow: 
+        0 30px 80px rgba(255,215,0,0.2),
+        inset 0 0 80px rgba(255,105,180,0.08);
+    }
+
+    /* ===== ENHANCED DIVINE MESSAGE CARD LAYOUT ===== */
+    .divine-message {
+      background: rgba(255,255,255,0.07);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 3px solid rgba(255,215,0,0.25);
+      box-shadow: 
+        0 40px 100px rgba(255,215,0,0.2),
+        inset 0 0 100px rgba(255,105,180,0.08);
+    }
+
+    /* ===== ENHANCED PROPOSAL CARD LAYOUT ===== */
+    .proposal {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid rgba(255,215,0,0.2);
+      box-shadow: 
+        0 30px 100px rgba(255,215,0,0.2),
+        inset 0 0 80px rgba(255,105,180,0.08);
+      padding: 80px 40px;
+      border-radius: 35px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Animated divine light rays */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(circle, rgba(255,215,0,0.2) 0%, rgba(255,105,180,0.1) 50%, transparent 70%);
+      animation: divineGlow 10s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes divineGlow {
+      0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.6; }
+      50% { transform: translateX(-50%) scale(1.3); opacity: 0.9; }
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 2;
+      letter-spacing: 4px;
+      font-weight: 900;
+      animation: titleGlow 3s ease-in-out infinite;
+    }
+
+    @keyframes titleGlow {
+      0%, 100% { 
+        text-shadow: 
+          0 0 15px rgba(255,215,0,0.5), 
+          0 0 30px rgba(255,215,0,0.2),
+          0 0 50px rgba(255,105,180,0.1);
+      }
+      50% { 
+        text-shadow: 
+          0 0 25px rgba(255,215,0,0.8), 
+          0 0 50px rgba(255,215,0,0.4),
+          0 0 70px rgba(255,105,180,0.2);
+      }
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.3rem;
+      opacity: 0.95;
+      position: relative;
+      z-index: 2;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    .scroll-down {
+      margin-top: 50px;
+      font-size: 1rem;
+      opacity: 0.7;
+      animation: float 2.5s infinite ease-in-out;
+      position: relative;
+      z-index: 2;
+      letter-spacing: 1px;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(12px); }
+    }
+
+    /* ===== SHIVA IMAGE SECTION ===== */
+    .shiva-hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      max-width: 1300px;
+      margin: auto;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+    }
+
+    .shiva-image-wrapper {
+      position: relative;
+      width: 320px;
+      height: 420px;
+      animation: shivaPulse 6s ease-in-out infinite;
+    }
+
+    @keyframes shivaPulse {
+      0%, 100% { 
+        filter: drop-shadow(0 0 40px rgba(255,215,0,0.4)) drop-shadow(0 0 60px rgba(255,105,180,0.15)); 
+        transform: scale(1); 
+      }
+      50% { 
+        filter: drop-shadow(0 0 60px rgba(255,215,0,0.7)) drop-shadow(0 0 80px rgba(255,105,180,0.3)); 
+        transform: scale(1.02); 
+      }
+    }
+
+    .shiva-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+      border: 4px solid rgba(255,215,0,0.4);
+      box-shadow: 
+        0 0 50px rgba(255,215,0,0.5),
+        0 0 80px rgba(255,105,180,0.2),
+        inset 0 0 40px rgba(255,255,255,0.05);
+    }
+
+    .shiva-content {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .shiva-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #ffd700;
+      text-shadow: 
+        0 0 20px rgba(255,215,0,0.6),
+        0 0 40px rgba(255,105,180,0.2);
+      letter-spacing: 2px;
+      font-weight: 900;
+    }
+
+    .shiva-content p {
+      font-size: 1.15rem;
+      line-height: 2;
+      opacity: 0.95;
+    }
+
+    /* ===== DIVINE STORY SECTION ===== */
+    .story {
+      background: 
+        rgba(255,255,255,0.05);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 50px;
+      max-width: 1300px;
+      margin: auto;
+      padding: 80px 40px;
+      border-radius: 30px;
+      border: 2px solid rgba(255,215,0,0.2);
+      box-shadow: 
+        0 30px 80px rgba(255,215,0,0.15),
+        inset 0 0 80px rgba(255,105,180,0.05);
+    }
+
+    .story img {
+      width: 100%;
+      border-radius: 25px;
+      box-shadow: 
+        0 20px 60px rgba(0,0,0,0.9),
+        0 0 50px rgba(255,105,180,0.2);
+      border: 2px solid rgba(255,105,180,0.3);
+      transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.8s;
+    }
+
+    .story img:hover {
+      transform: scale(1.06) rotateZ(1deg);
+      box-shadow: 
+        0 30px 80px rgba(255,215,0,0.3),
+        0 0 80px rgba(255,105,180,0.4);
+    }
+
+    .story-text h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 25px;
+      font-size: 2.5rem;
+      color: #ffcc70;
+      text-shadow: 
+        0 0 20px rgba(255,215,0,0.6),
+        0 0 40px rgba(255,105,180,0.2);
+      letter-spacing: 2px;
+      font-weight: 900;
+    }
+
+    .story-text p {
+      line-height: 2;
+      opacity: 0.95;
+      font-size: 1.08rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* ===== ABHISHEK INTERACTION PREMIUM ===== */
+    .abhishek {
+      background: 
+        rgba(255,255,255,0.06);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      flex-direction: column;
+      position: relative;
+      padding: 80px 40px;
+      border-radius: 35px;
+      border: 2px solid rgba(255,215,0,0.2);
+      max-width: 700px;
+      margin: 0 auto;
+      box-shadow: 
+        0 30px 80px rgba(255,215,0,0.2),
+        inset 0 0 80px rgba(255,105,180,0.08);
+    }
+
+    .abhishek::before {
+      content: '🙏';
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 150px;
+      opacity: 0.15;
+      pointer-events: none;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .abhishek h2 {
+      font-size: 2.8rem;
+      letter-spacing: 3px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+
+    .lingam {
+      width: 130px;
+      height: 200px;
+      background: linear-gradient(135deg, #777, #222, #444);
+      border-radius: 65px 65px 35px 35px;
+      margin: 40px 0;
+      position: relative;
+      box-shadow: 
+        0 0 50px rgba(255,215,0,0.5),
+        0 0 80px rgba(255,105,180,0.2),
+        inset -15px -15px 40px rgba(0,0,0,0.8),
+        inset 15px 15px 40px rgba(255,255,255,0.15);
+      animation: lingamShimmer 4s ease-in-out infinite;
+    }
+
+    @keyframes lingamShimmer {
+      0%, 100% { box-shadow: 0 0 50px rgba(255,215,0,0.5), inset -15px -15px 40px rgba(0,0,0,0.8); }
+      50% { box-shadow: 0 0 80px rgba(255,215,0,0.8), 0 0 100px rgba(255,105,180,0.3), inset -15px -15px 40px rgba(0,0,0,0.5); }
+    }
+
+    /* ===== ABHISHEK SIDE-BY-SIDE LAYOUT ===== */
+.abhishek-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.abhishek-image {
+  width: 220px;
+  height: 320px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 3px solid rgba(255,215,0,0.4);
+  box-shadow:
+    0 0 40px rgba(255,215,0,0.5),
+    0 0 70px rgba(173,216,230,0.3);
+  animation: imageGlow 5s ease-in-out infinite;
+}
+
+.abhishek-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Soft divine glow animation */
+@keyframes imageGlow {
+  0%,100% {
+    box-shadow:
+      0 0 40px rgba(255,215,0,0.4),
+      0 0 60px rgba(173,216,230,0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 70px rgba(255,215,0,0.7),
+      0 0 90px rgba(173,216,230,0.4);
+  }
+}
+    .water {
+      position: absolute;
+      top: -160px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(200,240,255,0.98),
+        rgba(173,216,230,0.7),
+        rgba(173,216,230,0.3)
+      );
+      border-radius: 50%;
+      filter: blur(1px);
+      box-shadow: 
+        0 0 20px rgba(173,216,230,0.9),
+        0 0 40px rgba(173,216,230,0.5),
+        0 0 60px rgba(255,105,180,0.2);
+      transition: height 1.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .abhishek button {
+      padding: 18px 50px;
+      border-radius: 50px;
+      border: none;
+      background: linear-gradient(145deg, #ffd700, #ffb300);
+      color: #2a1f0f;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s;
+      letter-spacing: 1.5px;
+      box-shadow: 0 15px 40px rgba(255,215,0,0.4);
+      text-transform: uppercase;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      min-height: 48px;
+      min-width: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .abhishek button:hover {
+      transform: translateY(-8px) scale(1.08);
+      box-shadow: 0 25px 60px rgba(255,215,0,0.7), 0 0 40px rgba(255,105,180,0.3);
+    }
+
+    .abhishek button:active {
+      transform: translateY(-3px) scale(1.03);
+    }
+
+    .forever-button {
+      padding: 20px 50px;
+      font-size: 1.3rem;
+      border-radius: 40px;
+      background: linear-gradient(145deg, #ffcc70, #ff69b4);
+      color: #3b2f1e;
+      border: 3px solid rgba(255,255,255,0.4);
+      box-shadow: 0 15px 50px rgba(255,159,28,0.6);
+      cursor: pointer;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      text-transform: uppercase;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      min-height: 48px;
+      min-width: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .forever-button:hover {
+      transform: scale(1.12) translateY(-5px);
+      box-shadow: 0 25px 70px rgba(255,215,0,0.8), 0 0 50px rgba(255,105,180,0.6);
+      border-color: #fff;
+    }
+
+    .forever-button:active {
+      transform: scale(1.05) translateY(-2px);
+    }
+
+    .proposal button {
+      padding: 22px 70px;
+      font-size: 1.4rem;
+      border-radius: 50px;
+      border: 3px solid #ffdf00;
+      background: linear-gradient(145deg, #ffdf00, #ff69b4);
+      color: #2a1f0f;
+      cursor: pointer;
+      font-weight: 900;
+      letter-spacing: 2px;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+      box-shadow: 0 20px 60px rgba(255,215,0,0.6), 0 0 40px rgba(255,105,180,0.3);
+      text-transform: uppercase;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      min-height: 48px;
+      min-width: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .proposal button:hover {
+      transform: scale(1.15) translateY(-5px);
+      box-shadow: 0 35px 80px rgba(255,215,0,0.9), 0 0 80px rgba(255,105,180,0.6);
+      border-color: #fff;
+    }
+
+    .proposal button:active {
+      transform: scale(1.08) translateY(-2px);
+    }
+
+    /* ===== PREMIUM SHIVA GALLERY ===== */
+    .shiva-gallery {
+      background: 
+        linear-gradient(135deg, rgba(75,0,130,0.15) 0%, rgba(0,0,0,0.97) 100%);
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .shiva-gallery h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      margin-bottom: 60px;
+      color: #ffcc70;
+      text-shadow: 
+        0 0 25px rgba(255,215,0,0.7),
+        0 0 50px rgba(255,105,180,0.2);
+      letter-spacing: 3px;
+      font-weight: 900;
+    }
+
+    .shiva-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .shiva-gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 30px;
+      aspect-ratio: 3/4;
+      box-shadow: 
+        0 25px 70px rgba(0,0,0,0.85),
+        0 0 50px rgba(255,105,180,0.15);
+      border: 3px solid rgba(255,215,0,0.25);
+      transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+      cursor: pointer;
+    }
+
+    .shiva-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+      filter: brightness(0.85) contrast(1.15);
+    }
+
+    .shiva-gallery-item::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(255,215,0,0.25) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.6s;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .shiva-gallery-item:hover {
+      transform: translateY(-20px) rotateZ(-2deg);
+      box-shadow: 
+        0 40px 100px rgba(255,215,0,0.4),
+        0 0 80px rgba(255,105,180,0.4);
+      border-color: rgba(255,215,0,0.6);
+    }
+
+    .shiva-gallery-item:hover::before {
+      opacity: 1;
+    }
+
+    .shiva-gallery-item:hover img {
+      transform: scale(1.12) rotate(2deg);
+      filter: brightness(1) contrast(1.2);
+    }
+
+    /* ===== ROMANTIC TIMELINE ===== */
+    .romantic-timeline {
+      background: 
+        rgba(255,255,255,0.06);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 100px 40px;
+      max-width: 1000px;
+      margin: auto;
+      border-radius: 30px;
+      border: 2px solid rgba(255,215,0,0.2);
+      box-shadow: 
+        0 30px 80px rgba(255,215,0,0.2),
+        inset 0 0 80px rgba(255,105,180,0.08);
+    }
+
+    .timeline-item {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 50px;
+      position: relative;
+      animation: slideIn 0.8s ease-out forwards;
+      opacity: 0;
+    }
+
+    .timeline-item:nth-child(1) { animation-delay: 0.2s; }
+    .timeline-item:nth-child(2) { animation-delay: 0.4s; }
+    .timeline-item:nth-child(3) { animation-delay: 0.6s; }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .timeline-marker {
+      flex-shrink: 0;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ffcc70, #ff9f1c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      box-shadow: 0 0 30px rgba(255,215,0,0.5), 0 0 50px rgba(255,105,180,0.2);
+      border: 3px solid rgba(255,255,255,0.3);
+    }
+
+    .timeline-content h3 {
+      font-size: 1.5rem;
+      color: #ffcc70;
+      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+    }
+
+    .timeline-content p {
+      color: #f5e6c8;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    /* ===== DIVINE MESSAGE SECTION ===== */
+    .divine-message {
+      background: 
+        rgba(255,255,255,0.07);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      padding: 100px 40px;
+      text-align: center;
+      border: 3px solid rgba(255,215,0,0.25);
+      border-radius: 40px;
+      margin: 80px auto;
+      max-width: 1000px;
+      position: relative;
+      box-shadow: 
+        0 40px 100px rgba(255,215,0,0.2),
+        inset 0 0 100px rgba(255,105,180,0.08);
+    }
+
+    .divine-message::before {
+      content: '✨';
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 70px;
+      animation: sparkle 2.5s ease-in-out infinite;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 0.4; transform: translateX(-50%) scale(1); }
+      50% { opacity: 1; transform: translateX(-50%) scale(1.3); }
+    }
+
+    .divine-message p {
+      color: #f5e6c8;
+      font-size: 1.3rem;
+      line-height: 2;
+      margin: 25px 0;
+      letter-spacing: 0.5px;
+    }
+
+    .divine-message h2 {
+      font-family: 'Great Vibes', cursive;
+      color: #ffcc70;
+      font-size: 3.2rem;
+      margin: 40px 0;
+      text-shadow: 0 0 30px rgba(255,215,0,0.5);
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+
+
+    /* ===== FINAL PROPOSAL ===== */
+    .proposal {
+      background: 
+        rgba(255,255,255,0.06);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      text-align: center;
+      position: relative;
+      padding: 120px 40px;
+      border-radius: 35px;
+      border: 2px solid rgba(255,215,0,0.2);
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 
+        0 30px 100px rgba(255,215,0,0.2),
+        inset 0 0 80px rgba(255,105,180,0.08);
+    }
+
+    .proposal::before {
+      content: '💎';
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 80px;
+      animation: diamondGlow 3s ease-in-out infinite;
+      filter: drop-shadow(0 0 20px rgba(255,215,0,0.5));
+    }
+
+    @keyframes diamondGlow {
+      0%, 100% { opacity: 0.4; transform: translateX(-50%) scale(1) rotateY(0deg); }
+      50% { opacity: 1; transform: translateX(-50%) scale(1.3) rotateY(20deg); }
+    }
+
+    .proposal h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin-bottom: 30px;
+      margin-top: 50px;
+      color: #ffcc70;
+      text-shadow: 
+        0 0 20px rgba(255,215,0,0.6),
+        0 0 40px rgba(255,215,0,0.3),
+        0 0 60px rgba(255,105,180,0.2);
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .proposal p {
+      font-size: 1.4rem;
+      margin-bottom: 50px;
+      color: #f5e6c8;
+      line-height: 2;
+      letter-spacing: 0.5px;
+    }
+
+
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, rgba(0,0,0,0.98), rgba(20,0,40,0.95));
+      border-top: 3px solid rgba(255,215,0,0.3);
+      font-size: 1.2rem;
+      color: #ffcc70;
+      letter-spacing: 3px;
+      text-shadow: 0 0 15px rgba(255,215,0,0.4);
+      font-weight: 600;
+    }
+
+    /* ===== ENHANCED FLOATING ELEMENTS ===== */
+    @keyframes moonPulse {
+      0%,100% { transform:scale(1); opacity:0.6; }
+      50% { transform:scale(1.2); opacity:1; }
+    }
+
+    .lotus-container::before,
+    .lotus-container::after {
+      content:'🌸';
+      position:fixed;
+      top:-10%;
+      font-size:3rem;
+      animation:lotusFall 16s linear infinite;
+      opacity:0.5;
+      text-shadow: 0 0 30px rgba(255,192,203,0.8);
+      z-index: 0;
+    }
+
+    .lotus-container::after {
+      left:70%;
+      animation-duration:20s;
+      content: '🌺';
+      font-size: 2.8rem;
+    }
+
+    @keyframes lotusFall {
+      0% { transform:translateY(0) rotate(0deg); }
+      100% { transform:translateY(120vh) rotate(360deg); }
+    }
+
+    /* ===== MOBILE FIRST RESPONSIVE ===== */
+    @media (max-width: 480px) {
+      /* Disable fixed backgrounds on mobile for better performance */
+      .hero, .mahakal-section, .story-section, .abhishek-section, .gallery-section, .timeline-section, .divine-message-section, .proposal-section, .final-message-section {
+        background-attachment: scroll !important;
+      }
+
+      body { font-size: 14px; overflow-x: hidden; }
+      
+      section { padding: 50px 15px !important; min-height: auto; }
+      
+      .hero { min-height: auto; padding: 60px 15px !important; }
+      .hero h1 { font-size: 1.8rem; letter-spacing: 1px; margin-bottom: 15px; }
+      .hero p { font-size: 0.95rem; line-height: 1.6; }
+      .scroll-down { font-size: 0.8rem; margin-top: 30px; }
+      
+      .shiva-hero { gap: 15px; padding: 40px 15px; flex-direction: column; }
+      .shiva-image-wrapper { width: 200px; height: 280px; }
+      .shiva-content { min-width: 100%; }
+      .shiva-content h2 { font-size: 1.6rem; letter-spacing: 0.5px; }
+      .shiva-content p { font-size: 0.9rem; line-height: 1.6; }
+      
+      .story { grid-template-columns: 1fr !important; gap: 20px; padding: 40px 15px; }
+      .story img { border-radius: 15px; }
+      .story-text h2 { font-size: 1.4rem; margin-bottom: 15px; }
+      .story-text p { font-size: 0.9rem; line-height: 1.7; }
+      
+      .abhishek { padding: 45px 15px !important; }
+      .abhishek::before { font-size: 70px; top: -50px; }
+      .abhishek h2 { font-size: 1.6rem; letter-spacing: 0.5px; margin-bottom: 10px; }
+      .abhishek p { font-size: 0.85rem; }
+      .lingam { width: 90px; height: 140px; margin: 25px 0; }
+      .abhishek button { padding: 12px 30px; font-size: 0.9rem; letter-spacing: 0.3px; }
+      
+      .shiva-gallery { padding: 60px 15px !important; }
+      .shiva-gallery h2 { font-size: 1.6rem; letter-spacing: 0.5px; margin-bottom: 25px; }
+      .shiva-gallery-grid { grid-template-columns: 1fr; gap: 15px; }
+      .shiva-gallery-item { aspect-ratio: 3/4; border-radius: 15px; border: 2px solid rgba(255,215,0,0.15); }
+      .shiva-gallery-item:hover { transform: translateY(-10px); }
+      
+      .romantic-timeline { padding: 50px 15px !important; border-radius: 20px; }
+      .timeline-item { gap: 12px; margin-bottom: 25px; }
+      .timeline-marker { width: 45px; height: 45px; font-size: 1.3rem; }
+      .timeline-content h3 { font-size: 1.05rem; margin-bottom: 5px; }
+      .timeline-content p { font-size: 0.85rem; line-height: 1.6; }
+      
+      .divine-message { padding: 50px 15px !important; border-radius: 15px; margin: 30px auto; border: 2px solid rgba(255,215,0,0.1); }
+      .divine-message::before { font-size: 35px; top: -20px; }
+      .divine-message p { font-size: 1rem; line-height: 1.7; margin: 12px 0; }
+      .divine-message h2 { font-size: 1.8rem; margin: 20px 0; }
+      .forever-button { padding: 12px 30px; font-size: 0.95rem; letter-spacing: 0.5px; }
+      
+      .proposal { padding: 70px 15px !important; }
+      .proposal::before { font-size: 40px; }
+      .proposal h2 { font-size: 1.6rem; margin-top: 25px; letter-spacing: 0.5px; }
+      .proposal p { font-size: 1rem; line-height: 1.8; margin-bottom: 25px; }
+      .proposal button { padding: 12px 30px; font-size: 0.95rem; letter-spacing: 0.5px; }
+      
+      [style*="font-size: 3.5rem"] { font-size: 1.6rem !important; }
+      [style*="font-size: 1.35rem"] { font-size: 0.95rem !important; }
+      [style*="font-size: 1.4rem"] { font-size: 1rem !important; }
+      [style*="font-size: 2.4rem"] { font-size: 1.4rem !important; }
+      
+      .lotus-container::before, .lotus-container::after { font-size: 1.5rem !important; }
+      
+      [style*="position:fixed; top:40px"] { width: 100px !important; height: 100px !important; top: 15px !important; right: 10px !important; }
+      
+      footer { padding: 25px 15px; font-size: 0.9rem; letter-spacing: 0.5px; }
+    }
+
+    /* Small tablets (481px - 768px) */
+    @media (min-width: 481px) and (max-width: 768px) {
+      body { font-size: 15px; }
+      
+      section { padding: 70px 20px; }
+      
+      .hero h1 { font-size: 2.2rem; letter-spacing: 1.5px; }
+      .hero p { font-size: 1.05rem; }
+      
+      .shiva-hero { gap: 35px; }
+      .shiva-image-wrapper { width: 260px; height: 360px; }
+      .shiva-content h2 { font-size: 2rem; letter-spacing: 1px; }
+      .shiva-content p { font-size: 1rem; }
+      
+      .story { grid-template-columns: 1fr; gap: 30px; padding: 60px 25px; }
+      .story-text h2 { font-size: 1.8rem; }
+      .story-text p { font-size: 0.95rem; }
+      
+      .abhishek h2 { font-size: 2rem; }
+      .abhishek button { padding: 14px 40px; font-size: 1rem; }
+      
+      .shiva-gallery h2 { font-size: 2.2rem; margin-bottom: 40px; }
+      .shiva-gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 25px; }
+      .shiva-gallery-item { border-radius: 20px; }
+      
+      .romantic-timeline { padding: 70px 25px; }
+      .timeline-item { gap: 25px; }
+      .timeline-marker { width: 55px; height: 55px; font-size: 1.5rem; }
+      
+      .divine-message { padding: 70px 25px; }
+      .divine-message h2 { font-size: 2.2rem; }
+      
+      .proposal h2 { font-size: 2.2rem; }
+      .proposal button { padding: 16px 45px; font-size: 1.1rem; }
+      
+      footer { font-size: 1rem; }
+    }
+
+    /* Tablets and larger (769px+) - DESKTOP */
+    @media (min-width: 769px) {
+      body { font-size: 16px; }
+      
+      section { padding: 80px 20px; }
+      
+      .hero h1 { font-size: clamp(2.8rem, 6vw, 4.5rem); letter-spacing: 4px; }
+      .hero p { font-size: 1.3rem; }
+      
+      .shiva-hero { gap: 60px; }
+      .shiva-image-wrapper { width: 320px; height: 420px; }
+      .shiva-content h2 { font-size: 2.8rem; letter-spacing: 2px; }
+      .shiva-content p { font-size: 1.15rem; }
+      
+      .story { 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 50px;
+        padding: 80px 40px;
+      }
+      .story-text h2 { font-size: 2.5rem; }
+      
+      .abhishek h2 { font-size: 2.8rem; }
+      .abhishek button { padding: 18px 50px; font-size: 1.2rem; }
+      
+      .shiva-gallery h2 { font-size: 3.2rem; margin-bottom: 60px; }
+      .shiva-gallery-grid { 
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 35px;
+      }
+      
+      .romantic-timeline { padding: 100px 40px; }
+      .timeline-marker { width: 60px; height: 60px; }
+      
+      .divine-message { padding: 100px 40px; margin: 80px auto; }
+      .divine-message h2 { font-size: 3.2rem; }
+      
+      .proposal { padding: 120px 40px; }
+      .proposal h2 { font-size: 4rem; }
+      .proposal button { padding: 22px 70px; font-size: 1.4rem; }
+      
+      footer { font-size: 1.2rem; padding: 50px 20px; }
+    }
+
+    /* Large screens (1200px+) */
+    @media (min-width: 1200px) {
+      .shiva-hero { max-width: 1300px; }
+      .story { max-width: 1300px; }
+      .shiva-gallery-grid { max-width: 1400px; }
+      .romantic-timeline { max-width: 1000px; }
+      .divine-message { max-width: 1000px; }
+    }
+
+  </style>
+</head>
+<body style="margin:0; font-family:'Georgia',serif; background:radial-gradient(circle at top,#1b263b,#0d1b2a,#000); overflow-x:hidden;">
+
+  <!-- 🎶 DIVINE BACKGROUND MUSIC -->
+  <audio id="divineAudio" loop muted playsinline preload="auto">
+    <source src="assets/audio/kaal_bhairav_ashtakam.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- 🌙 Moonlight Glow -->
+  <div style="position:fixed; top:40px; right:40px; width:200px; height:200px; background:radial-gradient(circle,#ffffff00,#ffffff44,#ffffff00); border-radius:50%; filter:blur(15px); animation:moonPulse 7s ease-in-out infinite; z-index:0; box-shadow: 0 0 80px rgba(255,255,255,0.4);"></div>
+
+  <!-- 🌸 Floating Lotus Petals -->
+  <div class="lotus-container"></div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div>
+      <h1 class="glow-text">✨ Maha Shivratri ✨</h1>
+      <p>Like Shiva and Shakti, two souls bound by devotion, love, and eternal companionship.<br/>A night of divine blessing for our forever.</p>
+      <div class="scroll-down">Tap and scroll to begin the divine journey ↓</div>
+    </div>
+  </section>
+
+  <!-- ===== MAHAKAL SECTION ===== -->
+  <section class="mahakal-section" style="min-height: 100vh; display: flex; align-items: center; padding: 80px 20px;">
+    <div class="shiva-hero">
+      <div class="shiva-image-wrapper">
+        <img src="assets/images/6.png" alt="Lord Shiva Meditation">
+      </div>
+      <div class="shiva-content">
+        <h2>🕉️ Mahakal Mahadeva 🕉️</h2>
+        <p>The divine power that removes darkness. In His presence, love feels pure, peaceful, and sacred, With Shiva’s strength and Parvati’s grace, love feels calm, pure, and eternal</p>
+        <p style="margin-top: 30px; font-size: 1.4rem; color: #ffcc70; font-weight: 600; letter-spacing: 1px;">नमः शिवाय</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SACRED BOND SECTION ===== -->
+  <section class="story-section" style="padding: 80px 20px;">
+    <div class="story">
+      <img src="assets/images/2.png" alt="Divine Blessing">
+      <div class="story-text">
+        <h2 class="glow-heart">💖 A Sacred Bond 💖</h2>
+        <p>
+          Under Mahadev's divine presence, love transforms into surrender and devotion. This journey is not just of hearts intertwined, but of souls walking the same sacred path, protected by His trident and infinite grace.
+          <br/><br/>
+          Every moment shared is a prayer of gratitude. Every glance is a blessing from the divine. Every touch is a meditation on the beauty of togetherness. In you, I found not just love, but the divine itself.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABHISHEK INTERACTIVE SECTION ===== -->
+  <section class="abhishek-section" style="min-height: 100vh; display: flex; align-items: center; padding: 80px 20px;">
+    <div class="abhishek">
+      <h2 class="glow-text">🕉️ Offer Your Abhishek 🕉️</h2>
+      <p style="opacity: 0.9; margin-bottom: 40px; font-style: italic; font-size: 1.1rem;">Pour sacred water upon the Lingam as an offering of devotion and love</p>
+      <div class="abhishek-layout">
+
+
+        <div class="lingam">
+          <div class="water" id="water"></div>
+        </div>
+  
+        <!-- Abhishekam Image -->
+        <div class="abhishek-image">
+          <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy5Gh1yucAI1c34caqTzlhU3SwU3LFNyoevQ&s" 
+            alt="Shiva Abhishekam"
+          />
+        </div>
+    
+        
+      
+      </div>
+      
+      <button onclick="startAbhishek()">Pour Sacred Water 💧</button>
+    </div>
+  </section>
+
+  <!-- ===== DIVINE SHIVA GALLERY ===== -->
+  <section class="gallery-section">
+    <div class="shiva-gallery">
+    <h2>✨ Divine Manifestations of Mahadev ✨</h2>
+    <div class="shiva-gallery-grid">
+      <div class="shiva-gallery-item">
+        <img src="assets/images/1.png" alt="Divine Shiva">
+      </div>
+      <div class="shiva-gallery-item">
+        <img src="assets/images/2.png" alt="Shiva Meditation">
+      </div>
+      <div class="shiva-gallery-item">
+        <img src="assets/images/3.png" alt="Divine Light">
+      </div>
+      <div class="shiva-gallery-item">
+        <img src="assets/images/4.png" alt="Sacred Temple">
+      </div>
+      <div class="shiva-gallery-item">
+        <img src="assets/images/7.png" alt="Spiritual Essence">
+      </div>
+      <div class="shiva-gallery-item">
+        <img src="assets/images/5.png" alt="Mountain Mystic">
+      </div>
+      <div class="shiva-gallery-item">
+        <img src="assets/images/6.png" alt="Spiritual Essence">
+      </div>
+      <div class="shiva-gallery-item">
+        <img src="assets/images/8.png" alt="Spiritual Essence">
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- ===== ROMANTIC JOURNEY TIMELINE ===== -->
+  <section class="timeline-section" style="padding: 100px 20px;">
+    <div style="max-width: 1000px; margin: auto;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; text-align: center; color: #ffcc70; margin-bottom: 80px; text-shadow: 0 0 25px rgba(255,215,0,0.6); letter-spacing: 2px; font-weight: 900;">
+        💑 Our Divine Journey 💑
+      </h2>
+      <div class="romantic-timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">💫</div>
+          <div class="timeline-content">
+            <h3>The Meeting</h3>
+            <p>When our paths crossed, the universe aligned. It was destiny written in the stars, guided by divine hands.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">💕</div>
+          <div class="timeline-content">
+            <h3>The Connection</h3>
+            <p>Beyond attraction lies understanding. We discovered not just love, but a soulmate—a reflection of our own divinity.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">♾️</div>
+          <div class="timeline-content">
+            <h3>Forever Begins Now</h3>
+            <p>On this sacred night of Maha Shivratri, we commit not just to this lifetime, but to every lifetime the universe grants us.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIVINE NAMES SECTION ===== -->
+  <section class="divine-message-section">
+    <div class="divine-message">
+      <p style="font-size: 1.4rem; color: #ffcc70; margin-bottom: 30px; font-weight: 600; letter-spacing: 1px;">
+        🙏 In the celestial presence of Mahadev, two souls were destined to meet 🙏
+      </p>
+
+      <h2>✨ Laxminarayana ❤️ Mounica ✨</h2>
+
+      <p>
+        Just like Shiva and Shakti — strength and grace, cosmic power and divine energy —<br/>
+        your love is not just a feeling, but a sacred cosmic dance.
+        <br/><br/>
+        On this holiest night of <strong>Maha Shivratri</strong>,<br/>
+        may your bond be blessed with infinite trust, boundless patience,<br/>
+        and eternal togetherness across all lifetimes.
+      </p>
+
+      <button class="forever-button" onclick="createHeartParticles(); alert('💕 Har Har Mahadev! Forever Blessed! 💕✨');">
+        💍 Forever Begins Here 💍
+      </button>
+    </div>
+  </section>
+
+  <!-- ===== FINAL PROPOSAL SECTION ===== -->
+  <section class="proposal-section">
+    <div class="proposal">
+    <h2>Will You Walk This Divine Path With Me?</h2>
+    <p>Not just in this lifetime, but in every existence blessed by Mahadev—<br/>as my love, my strength, my eternal half.</p>
+    <button onclick="createHeartParticles(); alert('❤️ Har Har Mahadev! My Forever Love! ❤️✨');">Always & Forever</button>
+    </div>
+  </section>
+
+  <!-- ===== FINAL LOVE MESSAGE ===== -->
+  <section class="final-message-section" style="text-align: center; position: relative;">
+    <div style="max-width: 900px; margin: auto;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 3.5rem; color: #ffcc70; margin-bottom: 50px; text-shadow: 0 0 30px rgba(255,215,0,0.6); letter-spacing: 2px; font-weight: 900;">
+        💖 From My Soul To Yours 💖
+      </h2>
+      
+      <p style="font-size: 1.35rem; color: #f5e6c8; max-width: 850px; margin: 0 auto 40px; line-height: 2.2; letter-spacing: 0.5px;">
+        Mounica,
+        <br/><br/>
+        In the silence of meditation, I find your presence.<br/>
+        In every prayer, I whisper your name.<br/>
+        In every moment of stillness, my soul recognizes its counterpart.<br/>
+        <br/>
+        You are not just my love—you are my dharma, my purpose, my forever blessing.<br/>
+        <br/>
+        With Mahadev as witness, the moon as our blessing,<br/>
+        and infinity as our canvas,<br/>
+        I ask you to walk this sacred journey with me.
+      </p>
+      
+      <h3 style="margin-top: 60px; font-size: 2.4rem; color: #ffcc70; font-family: 'Great Vibes', cursive; font-weight: 400; letter-spacing: 1px;">
+        — Laxminarayana ❤️
+      </h3>
+      
+      <p style="margin-top: 50px; font-size: 1.2rem; color: #cdb892; opacity: 0.85; letter-spacing: 2px;">
+        🙏 नमः शिवाय • Har Har Mahadev 🙏
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== MOBILE TIP ===== -->
+  <section style="padding: 60px 20px; text-align: center; color: #cdb892; font-size: 1.1rem; background: rgba(0,0,0,0.6); letter-spacing: 1px;">
+    📱 For the most immersive experience, view this on your phone in fullscreen mode ✨
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>ॐ नमः शिवाय • Har Har Mahadev • शिव भोलेनाथ • ॐ</p>
+  </footer>
+
+  <script>
+    // ===== ABHISHEK ANIMATION =====
+    function startAbhishek() {
+      const water = document.getElementById('water');
+      water.style.height = '240px';
+      
+      // Create particle effects
+      for(let i = 0; i < 5; i++) {
+        setTimeout(() => createWaterDroplets(), i * 200);
+      }
+      
+      setTimeout(() => water.style.height = '0', 3200);
+    }
+
+    function createWaterDroplets() {
+      for(let i = 0; i < 8; i++) {
+        const particle = document.createElement('div');
+        particle.innerHTML = '💧';
+        particle.className = 'particle particle-heart';
+        particle.style.left = (Math.random() * 100) + 'px';
+        particle.style.top = '300px';
+        particle.style.fontSize = '1.2rem';
+        particle.style.animation = 'floatUp 3s ease-out forwards';
+        document.body.appendChild(particle);
+        
+        setTimeout(() => particle.remove(), 3000);
+      }
+    }
+
+    // ===== HEART PARTICLES ON BUTTON CLICK =====
+    function createHeartParticles() {
+      for(let i = 0; i < 30; i++) {
+        setTimeout(() => {
+          const particle = document.createElement('div');
+          particle.innerHTML = '❤️';
+          particle.className = 'particle particle-heart';
+          particle.style.left = (Math.random() * window.innerWidth) + 'px';
+          particle.style.top = window.innerHeight + 'px';
+          particle.style.animation = 'floatUp ' + (3 + Math.random() * 2) + 's ease-out forwards';
+          document.body.appendChild(particle);
+          
+          setTimeout(() => particle.remove(), 5000);
+        }, i * 50);
+      }
+    }
+
+    // ===== TAP/SCROLL TO BEGIN JOURNEY + MUSIC =====
+    document.addEventListener('DOMContentLoaded', function () {
+      const audio = document.getElementById('divineAudio');
+      let started = false;
+
+      audio.volume = 0.15;
+
+      function startJourney() {
+        if (started) return;
+        started = true;
+
+        audio.muted = false;
+        audio.play().catch(() => {});
+
+        window.removeEventListener('scroll', startJourney);
+        document.removeEventListener('click', startJourney);
+        document.removeEventListener('touchstart', startJourney);
+      }
+
+      document.addEventListener('click', startJourney, { once: true });
+      document.addEventListener('touchstart', startJourney, { once: true });
+      window.addEventListener('scroll', startJourney, { once: true, passive: true });
+    });
+
+    // ===== RANDOM HEART PARTICLES DURING SCROLLING =====
+    window.addEventListener('scroll', function() {
+      if (Math.random() < 0.05) {
+        const particle = document.createElement('div');
+        particle.innerHTML = '✨';
+        particle.className = 'particle particle-star';
+        particle.style.left = (Math.random() * window.innerWidth) + 'px';
+        particle.style.top = (Math.random() * window.innerHeight) + 'px';
+        particle.style.animation = 'twinkleFloat 5s ease-out forwards';
+        document.body.appendChild(particle);
+        
+        setTimeout(() => particle.remove(), 5000);
+      }
+    });
+
+  </script>
+
+</body>
+</html>
